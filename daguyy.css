@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f9f3f3;
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    transform: rotate(-45deg);
+}
+
+.heart::before, .heart::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    background: #ff6b6b;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: 0;
+    left: 50px;
+}
+
+.heart::after {
+    top: -50px;
+    left: 0;
+}
+
+.heart-inner {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #ff6b6b;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+button {
+    background: #ff6b6b;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff4d4d;
+}
+
+.photo {
+    margin-top: 20px;
+}
+
+.photo img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
