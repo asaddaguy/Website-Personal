@@ -25,25 +25,41 @@ body {
 }
 
 .splash-content h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 0;
     opacity: 0;
     animation: fadeIn 2s forwards;
 }
 
 .splash-content p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 10px 0;
     opacity: 0;
     animation: fadeIn 2s 1s forwards;
 }
 
 .logo {
-    width: 100px;
+    width: 150px;
     height: auto;
     margin-top: 20px;
     opacity: 0;
     animation: fadeIn 2s 2s forwards;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 2em;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #ff6b6b; /* Ganti dengan warna yang diinginkan saat hover */
 }
 
 @keyframes fadeIn {
@@ -61,4 +77,41 @@ body {
 .main-content {
     padding: 20px;
     text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .splash-content h1 {
+        font-size: 2em;
+    }
+
+    .splash-content p {
+        font-size: 1em;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .social-media a {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .splash-content h1 {
+        font-size: 1.5em;
+    }
+
+    .splash-content p {
+        font-size: 0.9em;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .social-media a {
+        font-size: 1.2em;
+    }
 }
